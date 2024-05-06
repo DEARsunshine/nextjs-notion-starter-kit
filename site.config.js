@@ -9,9 +9,9 @@ export default siteConfig({
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'kevin',
-  domain: 'https://cumbersome-mailman-fe9.notion.site/kevin-d6cf5cfc0e914799a3e94de922b4e4c2',
-  author: 'Travis Fischer',
+  name: 'Kevin-Zheng',
+  domain: 'https://www.notion.so/chain86/Kevin-Zheng-d6cf5cfc0e914799a3e94de922b4e4c2',
+  author: 'Kevin-Zheng',
 
   // open graph metadata (optional)
   description: 'Example Next.js Notion Starter Kit Site',
