@@ -6,7 +6,7 @@ import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin'
 import { FaMastodon } from '@react-icons/all-files/fa/FaMastodon'
 import { FaTwitter } from '@react-icons/all-files/fa/FaTwitter'
 import { FaYoutube } from '@react-icons/all-files/fa/FaYoutube'
-import { FaZhihu } from '@react-icons/all-files/fa/FaZhihu'
+import { FaBlog } from '@react-icons/all-files/fa/FaBlog'
 import { IoMoonSharp } from '@react-icons/all-files/io5/IoMoonSharp'
 import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
 
@@ -36,9 +36,9 @@ export const FooterImpl: React.FC = () => {
 
   return (
     <footer className={styles.footer}>
-      <div className={styles.copyright}>Copyright {currentYear} {config.author}</div>
+      {/* <div className={styles.copyright}>Copyright {currentYear} {config.author}</div> */}
 
-      <div className={styles.settings}>
+      <div className={styles.settings} style={{ position: 'absolute', top: '99%',left: '50%', width: '50%'}} >
         {hasMounted && (
           <a
             className={styles.toggleDarkMode}
@@ -53,6 +53,8 @@ export const FooterImpl: React.FC = () => {
       </div>
 
       <div className={styles.social}>
+      <div className={styles.highlightedSettings} style={{ position: 'absolute', top: '380px', left: '1200px',zIndex: '8000'   }}>
+      {/* <div className={styles.highlightedSettings} style={{ position: 'absolute', top: '10%', left: '10%', width: '20%', height: '20%', zIndex: '8000'   }}> */}
         {config.twitter && (
           <a
             className={styles.twitter}
@@ -62,6 +64,18 @@ export const FooterImpl: React.FC = () => {
             rel='noopener noreferrer'
           >
             <FaTwitter />
+          </a>
+        )}
+
+        {config.linkedin && (
+          <a
+            className={styles.linkedin}
+            href={`https://www.linkedin.com/in/${config.linkedin}`}
+            title={`LinkedIn ${config.author}`}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <FaLinkedin />
           </a>
         )}
 
@@ -76,15 +90,15 @@ export const FooterImpl: React.FC = () => {
           </a>
         )}
 
-        {config.zhihu && (
+        {config.blog && (
           <a
-            className={styles.zhihu}
-            href={`https://zhihu.com/people/${config.zhihu}`}
-            title={`Zhihu @${config.zhihu}`}
+            className={styles.blog}
+            href={`https://blog.csdn.net//${config.blog}`}
+            title={`Blog @${config.blog}`}
             target='_blank'
             rel='noopener noreferrer'
           >
-            <FaZhihu />
+            <FaBlog />
           </a>
         )}
 
@@ -97,18 +111,6 @@ export const FooterImpl: React.FC = () => {
             rel='noopener noreferrer'
           >
             <FaGithub />
-          </a>
-        )}
-
-        {config.linkedin && (
-          <a
-            className={styles.linkedin}
-            href={`https://www.linkedin.com/in/${config.linkedin}`}
-            title={`LinkedIn ${config.author}`}
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <FaLinkedin />
           </a>
         )}
 
@@ -135,6 +137,7 @@ export const FooterImpl: React.FC = () => {
             <FaYoutube />
           </a>
         )}
+      </div>
       </div>
     </footer>
   )
