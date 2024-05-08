@@ -9,20 +9,21 @@ export default siteConfig({
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'kevin',
-  domain: 'https://cumbersome-mailman-fe9.notion.site/kevin-d6cf5cfc0e914799a3e94de922b4e4c2',
-  author: 'Travis Fischer',
+  name: 'guoqiangsunshine',
+  domain: 'https://chain86.notion.site/Kevin-Zheng-d6cf5cfc0e914799a3e94de922b4e4c2',
+  author: 'guoqiang',
 
   // open graph metadata (optional)
   description: 'Example Next.js Notion Starter Kit Site',
 
   // social usernames (optional)
   //twitter: 'transitive_bs',
-  github: 'DEARsunshine',
-  linkedin: '',
+  // github: 'guoqiangsunshine',
+  linkedin: 'zhengguoqiang',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
-  // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
+  youtube: 'channel/UCI0w1rFbqgqTKt2aJ8_4nhQ', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
+  blog: 'Darlingqiang?spm=1020.2143.3001.5343',
 
   // default notion icon and cover images for site-wide consistency (optional)
   // page-specific values will override these site-wide defaults
@@ -50,16 +51,16 @@ export default siteConfig({
 
   // whether to use the default notion navigation style or a custom one with links to
   // important pages. To use `navigationLinks`, set `navigationStyle` to `custom`.
-  navigationStyle: 'default'
+  // navigationStyle: 'default'
   // navigationStyle: 'custom',
-  // navigationLinks: [
-  //   {
-  //     title: 'About',
-  //     pageId: 'f1199d37579b41cbabfc0b5174f4256a'
-  //   },
+  navigationLinks: [
+    {
+      title: 'About',
+      pageId: 'Kevin-Zheng-d6cf5cfc0e914799a3e94de922b4e4c2'
+    },
   //   {
   //     title: 'Contact',
   //     pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
   //   }
-  // ]
+  ]
 })
